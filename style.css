@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(#2a0000, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 200px;
+}
+
+/* HAND */
+.hand {
+  width: 120px;
+  height: 45px;
+  background: #f2c6a0;
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  color: pink;
+  font-size: 18px;
+  font-family: cursive;
+}
+
+/* STRING */
+.string {
+  width: 4px;
+  height: 200px;
+  background: white;
+  margin: auto;
+}
+
+/* YOYO */
+.yoyo {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #ff3b3b, #a00000);
+  border-radius: 50%;
+  margin: auto;
+
+  /* 👇 THIS IS IMPORTANT */
+  animation: spin 0.6s linear infinite;
+  transform-origin: center;
+}
+
+/* ROTATION */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
