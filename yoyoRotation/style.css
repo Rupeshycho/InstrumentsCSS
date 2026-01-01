@@ -27,18 +27,19 @@ body {
   margin: auto;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
   position: absolute;
-  bottom: -50px;
-  width: 100%;
   color: pink;
   font-size: 18px;
   font-family: cursive;
+  z-index: 10;
 }
 
-/* STRING */
 .string {
   width: 4px;
   height: 200px;
@@ -46,20 +47,16 @@ body {
   margin: auto;
 }
 
-/* YOYO */
-.yoyo {
+.yo-yo {
   width: 90px;
   height: 90px;
   background: radial-gradient(circle, #ff3b3b, #a00000);
   border-radius: 50%;
   margin: auto;
-
-  /* 👇 THIS IS IMPORTANT */
   animation: spin 0.6s linear infinite;
   transform-origin: center;
 }
 
-/* ROTATION */
 @keyframes spin {
   from {
     transform: rotate(0deg);
